@@ -7,12 +7,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClient {
     private static Retrofit ourInstance;
     public static Retrofit getInstance(){
-        if(ourInstance ==null)
-            ourInstance=new Retrofit.Builder()
+        if(ourInstance == null) {
+            ourInstance = new Retrofit.Builder()
                     .baseUrl("https://jsonplaceholder.typicode.com/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-            .build();
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                    .build();
+        }
 
         return ourInstance;
 
