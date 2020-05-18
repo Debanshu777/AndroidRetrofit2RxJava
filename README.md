@@ -1,5 +1,5 @@
 # AndroidRetrofit2RxJava
-First Approch
+First Approch<br>
 In this project i have shown how to working with Retrofit 2 and RxJava to fetch API and display data.
 #### Updates: Here I have used older dependencies so we have to include compilerOptions for Java8
 ```
